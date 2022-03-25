@@ -19,6 +19,16 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+     <!-- Control the behavior when the user long presses the power button.
+             0 - Nothing
+             1 - Global actions menu
+             2 - Power off (with confirmation)
+             3 - Power off (without confirmation)
+             4 - Go to voice assist
+             5 - Go to assistant (Settings.Secure.ASSISTANT)
+     -->
+     <integer name="config_longPressOnPowerBehavior">1</integer>
+
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>

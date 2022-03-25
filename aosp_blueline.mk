@@ -63,3 +63,30 @@ PRODUCT_NAME := aosp_blueline
 PRODUCT_DEVICE := blueline
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on blueline
+
+PRODUCT_ADB_KEYS := vendor/user1/xdroid.adb_key.pub
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/user1/certs/releasekey
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions = log \
+
+GAPPS_VARIANT := pico
+GAPPS_PRODUCT_PACKAGES += \
+        ActionsServices \
+        CarrierServices \
+        GoogleDialer \
+        LatinImeGoogle \
+        PixelLauncherIcons \
+        Velvet \
+        Wallpapers
+
+# GAPPS_PRODUCT_PACKAGES += \
+#         PixelLauncher
+
+GAPPS_BYPASS_PACKAGE_OVERRIDES := \
+        GoogleDialer
+
+# GAPPS_BYPASS_PACKAGE_OVERRIDES := \
+#         PixelLauncher
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
