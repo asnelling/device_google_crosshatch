@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.google.android.apps.turbo">
+        <permission name="android.permissions.BATTERY_PREDICTION" />
+    </privapp-permissions>
+    <privapp-permissions package="com.google.android.as">
+        <permission name="android.permissions.SYSTEM_CAMERA" />
+    </privapp-permissions>
+</permissions>

@@ -90,3 +90,6 @@ GAPPS_BYPASS_PACKAGE_OVERRIDES := \
 #         PixelLauncher
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
+PRODUCT_COPY_FILES += \
+    device/google/crosshatch/permissions/privapp-permissions-google-2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google-2.xml
