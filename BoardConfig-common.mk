@@ -102,6 +102,9 @@ TARGET_RECOVERY_UI_LIB := \
     librecovery_ui_pixel \
     libfstab
 
+BOARD_AVB_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_KEY_PATH := vendor/user1/avb_key.rsa4096.pem
+
 ifneq ($(filter %_mainline,$(TARGET_PRODUCT)),)
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/user1/avb_key.rsa4096.pem
