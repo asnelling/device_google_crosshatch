@@ -72,22 +72,18 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions = log \
 
 GAPPS_VARIANT := pico
-GAPPS_PRODUCT_PACKAGES += \
-        ActionsServices \
-        CarrierServices \
-        GoogleDialer \
-        LatinImeGoogle \
-        PixelLauncherIcons \
-        Velvet \
-        Wallpapers
-
 # GAPPS_PRODUCT_PACKAGES += \
-#         PixelLauncher
-
-GAPPS_BYPASS_PACKAGE_OVERRIDES := \
-        GoogleDialer
+#         ActionsServices \
+#         CarrierServices \
+#         GoogleDialer \
+#         LatinImeGoogle \
+#         PixelLauncher \
+#         PixelLauncherIcons \
+#         Velvet \
+#         Wallpapers
 
 # GAPPS_BYPASS_PACKAGE_OVERRIDES := \
+#         GoogleDialer \
 #         PixelLauncher
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
