@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config_list>
+    <carrier_config cid="1839" name="verizon">
+        <string name="vvm_client_prefix_string">//VZWVVM</string>
+        <string name="vvm_destination_number_string">900080006200</string>
+        <string name="vvm_type_string">vvm_type_vvm3</string>
+        <boolean name="vvm_cellular_data_required_bool" value="true" />
+        <boolean name="vvm_ssl_enabled_bool" value="true" />
+    </carrier_config>
+</carrier_config_list>
